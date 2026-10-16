@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="hwSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="hwRoad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="tealCar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="goldCar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1280" height="260" fill="url(#hwSky)"/>
+  
+  <!-- Highway Overpass & Guardrails -->
+  <rect y="240" width="1280" height="20" fill="#475569"/>
+  <rect y="260" width="1280" height="460" fill="url(#hwRoad)"/>
+
+  <!-- Highway Lane Dividers -->
+  <line x1="0" y1="410" x2="1280" y2="410" stroke="#f8fafc" stroke-width="4" stroke-dasharray="40 30" opacity="0.6"/>
+  <line x1="0" y1="560" x2="1280" y2="560" stroke="#fbbf24" stroke-width="4" stroke-dasharray="40 30" opacity="0.8"/>
+  <line x1="0" y1="690" x2="1280" y2="690" stroke="#f8fafc" stroke-width="6"/>
+
+  <!-- Car 1: Teal SUV (Lane 1) -->
+  <g transform="translate(140, 270)">
+    <ellipse cx="140" cy="180" rx="120" ry="16" fill="#020617" opacity="0.7"/>
+    <path d="M 20 160 L 50 80 L 210 80 L 260 130 L 270 170 L 10 170 Z" fill="url(#tealCar)"/>
+    <path d="M 60 85 L 125 85 L 125 125 L 45 125 Z" fill="#0f172a" opacity="0.8"/>
+    <path d="M 140 85 L 205 85 L 240 125 L 140 125 Z" fill="#0f172a" opacity="0.8"/>
+    <circle cx="70" cy="170" r="26" fill="#0f172a"/>
+    <circle cx="70" cy="170" r="12" fill="#cbd5e1"/>
+    <circle cx="210" cy="170" r="26" fill="#0f172a"/>
+    <circle cx="210" cy="170" r="12" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Motorcycle with Helmet (Lane 2) -->
+  <g transform="translate(540, 310)">
+    <!-- Helmet Head (With Helmet) -->
+    <circle cx="70" cy="45" r="30" fill="#10b981"/>
+    <path d="M 72 38 Q 95 44 80 62 Q 70 60 72 38 Z" fill="#064e3b"/>
+    <!-- Rider -->
+    <path d="M 45 75 L 95 75 L 105 135 L 35 135 Z" fill="#475569"/>
+    <!-- Motorbike -->
+    <path d="M 15 200 L 70 130 L 120 130 L 150 190 L 110 240 L 25 230 Z" fill="#8b5cf6"/>
+    <circle cx="35" cy="245" r="30" fill="#0f172a"/>
+    <circle cx="135" cy="245" r="30" fill="#0f172a"/>
+  </g>
+
+  <!-- Car 2: Gold Sedan (Lane 3) -->
+  <g transform="translate(780, 360)">
+    <ellipse cx="140" cy="190" rx="130" ry="16" fill="#020617" opacity="0.7"/>
+    <path d="M 25 165 L 60 95 L 210 95 L 265 140 L 275 180 L 15 180 Z" fill="url(#goldCar)"/>
+    <path d="M 68 100 L 130 100 L 130 135 L 50 135 Z" fill="#0f172a" opacity="0.8"/>
+    <path d="M 145 100 L 205 100 L 245 135 L 145 135 Z" fill="#0f172a" opacity="0.8"/>
+    <circle cx="75" cy="180" r="28" fill="#0f172a"/>
+    <circle cx="75" cy="180" r="12" fill="#e2e8f0"/>
+    <circle cx="215" cy="180" r="28" fill="#0f172a"/>
+    <circle cx="215" cy="180" r="12" fill="#e2e8f0"/>
+  </g>
+</svg>
